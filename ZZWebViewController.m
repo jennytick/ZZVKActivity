@@ -97,7 +97,7 @@
         if (self.activity.sharedText && self.activity.sharedURL)
             self.activity.sharedText = [NSString stringWithFormat:@"%@ %@", self.activity.sharedText, self.activity.sharedURL.absoluteString];
         
-        UIActivityViewController *presentingViewController = self.presentingViewController;
+        UIActivityViewController *presentingViewController = (UIActivityViewController *)self.presentingViewController;
         [self dismissViewControllerAnimated:YES completion:^(){
             [self.activity shareInViewController:presentingViewController];
         }];
