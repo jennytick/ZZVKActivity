@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ZZVKActivity'
-  s.version      = '0.0.3'
+  s.version      = '0.0.4'
   s.license      =  {:type => 'MIT'} 
   s.homepage     = 'https://github.com/jennytick/ZZVKActivity'
   s.authors      =  {'Yevgeniya Zelenska' => 'yevgeniya.zel@gmail.com'} 
