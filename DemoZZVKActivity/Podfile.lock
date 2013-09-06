@@ -1,0 +1,17 @@
+PODS:
+  - AFNetworking (1.3.2)
+  - ZZVKActivity (0.0.2):
+    - AFNetworking (~> 1.3.1)
+
+DEPENDENCIES:
+  - ZZVKActivity (from `git@github.com:jennytick/ZZVKActivity.git`)
+
+EXTERNAL SOURCES:
+  ZZVKActivity:
+    :git: git@github.com:jennytick/ZZVKActivity.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
+  ZZVKActivity: e99438304bc463af2c628a49ad5782afc2b35318
+
+COCOAPODS: 0.24.0

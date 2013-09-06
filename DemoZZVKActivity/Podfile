@@ -1,0 +1,7 @@
+platform :ios, "5.0"
+
+pod 'ZZVKActivity', :git => 'git@github.com:jennytick/ZZVKActivity.git'
+
+
+
+

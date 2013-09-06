@@ -3,8 +3,10 @@
 //  PrototypeForAvatarEditor
 //
 //  Created by Yevgeniya Zelenska on 8/26/13.
-//  Copyright (c) 2013 Yevgeniya Zelenska. All rights reserved.
+//  This file uses code from https://github.com/romaonthego/REActivityViewController
 //
+//  Copyright (c) 2013 Yevgeniya Zelenska. All rights reserved.
+//  Copyright (c) 2013 Roman Efimov (http://github.com/romaonthego)
 
 #import "ZZVKActivity.h"
 #import "ZZWebViewController.h"
@@ -46,8 +48,7 @@
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
         return navigationController;
     } else {
-        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-        ZZVKPostViewController *VKPostViewController = [storyBoard instantiateViewControllerWithIdentifier:@"VKPostViewController"];
+        ZZVKPostViewController *VKPostViewController = [[ZZVKPostViewController alloc] initWithNibName:@"VKPostViewController" bundle:nil];
         VKPostViewController.activity = self;
         return VKPostViewController;
     }
@@ -56,8 +57,7 @@
 #pragma mark - VK sharing
 
 -(void)shareInViewController:(UIActivityViewController *)controller{
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    ZZVKPostViewController *VKPostViewController = [storyBoard instantiateViewControllerWithIdentifier:@"VKPostViewController"];
+    ZZVKPostViewController *VKPostViewController = [[ZZVKPostViewController alloc] initWithNibName:@"VKPostViewController" bundle:nil];
     VKPostViewController.activity = self;
     [controller presentViewController:VKPostViewController animated:YES completion:nil];
 }
