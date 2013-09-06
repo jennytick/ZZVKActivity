@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = true
  
-  s.resources = ["Images/*.png", "*.xib"]
+  s.resources = ["*.png", "*.xib"]
   
   s.dependency 'AFNetworking', '~> 1.3.1'
 end
